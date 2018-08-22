@@ -106,7 +106,7 @@ void thread_create(){
             }else{
                 printf("thread_book created failed\n");
             }
-            sleep(5);
+            
 
             /*catalog name lists*/
             int catalog_pc = pthread_create(&pt[1], NULL, thread_catalog, NULL);
@@ -115,7 +115,7 @@ void thread_create(){
             }else{
                 printf("thread_catalog created successfully\n");
             }
-            sleep(5);
+            
 
            /*charpter content*/
             int charpter_pc = pthread_create(&pt[2], NULL, thread_charpter, NULL);
